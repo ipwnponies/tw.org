@@ -2,13 +2,20 @@
 
 This repository contains the content of the taskwarrior.org site.
 
+## Contributing
 
-## To Clone this Repository:
+For minor changes, it is perfectly fine to simply change the relevant Markdown files and make a pull request.
 
-   git clone https://github.com/GothenburgBitFactory/tw.org.git
+For more complex changes, here is how to build the documentation locally:
 
+1. Install [hugo](https://gohugo.io/getting-started/quick-start/).
+1. Run `hugo server -D -w`.
+   This defaults to running a web server on http://localhost:1313.
+   If you are running on an external host, try `hugo server -D -w --bind 0.0.0.0 -b http://<hostname>`
 
-## Instruction For Updating tw.org/html/tools
+## Updating Tools
+
+This repository has automation for searching GitHub for projects related to TaskWarrior and including them in the "Tools" page.
 
 On first usage, generate API tokens and store them safely for later:
 
